@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corinthians Game</title>
+  <link href="bt/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('https://cdn.meutimao.com.br/_upload/wallpapers/torcida_do_corinthians_na_neo_quimica_arena_85_1920x1080.jpg') no-repeat center center fixed;
+      background-size: cover;
+      /* Ajusta a imagem para ocupar toda a área visível do corpo*/
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-black text-white py-4 shadow">
+    <!--py-4: Adiciona padding vertical (topo e base) de 4 unidades de espaçamento (classe Bootstrap para espaçamento).-->
+    <div class="container text-center">
+      <!--container: Centraliza o conteúdo horizontalmente e adiciona margens automáticas para alinhamento (classe Bootstrap para layout responsivo).-->
+      <h1 class="display-4 fw-bold">Corinthians Game</h1>
+      <!-- display-4: Define um estilo maior para o texto, utilizado geralmente em títulos importantes (classe Bootstrap para tamanho de fonte).-->
+      <p class="lead">Mostre que você é fiel torcedor e teste seus conhecimentos!</p>
+      <!--lead: Aplica um estilo especial ao parágrafo, com fonte maior e mais espaçamento entre linhas (classe Bootstrap para destacar texto).-->
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!--container: Cria um layout responsivo e centraliza o conteúdo horizontalmente (classe Bootstrap para layout).
+    my-5: Adiciona margens verticais (topo e base) de 5 unidades de espaçamento (classe Bootstrap para espaçamento).-->
+    <div class="row justify-content-center">
+      <!--row: Cria uma linha do sistema grid do Bootstrap, permitindo organizar elementos em colunas.
+      justify-content-center: Centraliza as colunas horizontalmente dentro da linha.-->
+
+      <div class="col-12 col-md-8 col-lg-6">
+        <!--col-12: Define que a coluna ocupará 100% da largura em telas pequenas (XS).
+        col-md-8: A coluna ocupará 8/12 da largura total em telas médias (MD).
+        col-lg-6: A coluna ocupará 6/12 (ou 50%) da largura total em telas grandes (LG).-->
+        <form id="quiz-form" class="p-4 rounded bg-dark text-white shadow">
+          <!--p-4: Adiciona padding interno de 4 unidades (classe Bootstrap para espaçamento interno).
+          rounded: Arredonda as bordas do formulário (classe Bootstrap para bordas).-->
+
+          <div class="mb-4">
+            <!--mb-4: Adiciona margem inferior de 4 unidades ao div (classe Bootstrap para espaçamento).-->
+            <h2 class="h5">1. Em que ano o Corinthians foi fundado?</h2>
+            <!--h5: Define o título como nível 5 de destaque.-->
+            <input type="text" class="form-control" name="q1" id="q1" placeholder="Digite aqui...">
+            <div id="q1-feedback" class="mt-2"></div>
+            <!--class="mt-2": Adiciona margem superior de 2 unidades, espaçando-o do input (classe Bootstrap para espaçamento).-->
+          </div>
+
+          <div class="mb-4">
+            <!--mb-4: Adiciona margem inferior de 4 unidades ao bloco (classe Bootstrap para espaçamento). -->
+            <h2 class="h5">2. Qual é o maior rival do Corinthians?</h2>
+            <!--h5: Define o título como nível 5 de destaque, com tamanho menor que o título principal.-->
+            <div class="form-check">
+              <!--form-check: Aplica estilos do Bootstrap para criar um grupo de botões de rádio com alinhamento e espaçamento padronizados.-->
+              <input class="form-check-input" type="radio" name="q2" id="q2-palmeiras" value="Palmeiras">
+              <!--class="form-check-input": Estiliza o botão de rádio com os estilos do Bootstrap, tornando-o mais responsivo e estético.-->
+              <label class="form-check-label" for="q2-palmeiras">Palmeiras</label>
+              <!--class="form-check-label": Aplica estilos para o rótulo associado ao botão de rádio, garantindo alinhamento e legibilidade.-->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2-sao-paulo" value="São Paulo">
+              <label class="form-check-label" for="q2-sao-paulo">São Paulo</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2-santos" value="Santos">
+              <label class="form-check-label" for="q2-santos">Santos</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div id="q2-feedback" class="mt-2"></div>
+            <!--class="mt-2": Adiciona margem superior de 2 unidades, espaçando-o do restante do conteúdo. -->
+          </div>
+
+          <div class="mb-4">
+            <!--mb-4: Adiciona margem inferior de 4 unidades ao bloco, separando-o dos elementos adjacentes.-->
+            <h2 class="h5">3. Quantos títulos mundiais o Corinthians possui?</h2>
+            <!--h5: Apresenta a pergunta com um tamanho de fonte médio, seguindo a hierarquia visual do formulário.-->
+            <div class="form-check">
+              <!-- form-check: Classe do Bootstrap que organiza o botão de rádio e seu rótulo de forma alinhada e estilizada.-->
+              <input class="form-check-input" type="radio" name="q3" id="q3-1" value="1">
+              <!--class="form-check-input": Estiliza o botão de rádio com estilos do Bootstrap.-->
+              <label class="form-check-label" for="q3-1">1</label>
+              <!--class="form-check-label": Aplica estilos ao rótulo do botão de rádio.-->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3-2" value="2">
+              <label class="form-check-label" for="q3-2">2</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3-3" value="3">
+              <label class="form-check-label" for="q3-3">3</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div id="q3-feedback" class="mt-2"></div>
+            <!--class="mt-2": Adiciona margem superior de 2 unidades, espaçando o div do restante do conteúdo.-->
+          </div>
+
+          <div class="mb-4">
+            <!--mb-4: Adiciona margem inferior de 4 unidades, criando espaçamento entre este bloco e o próximo.-->
+            <h2 class="h5">4. Quem é o maior artilheiro da história do Corinthians?</h2>
+            <!--h5: Apresenta a pergunta com tamanho de fonte menor, enfatizando sua posição como a quarta pergunta.-->
+            <div class="form-check">
+              <!--form-check: Agrupa o botão de rádio e seu rótulo, aplicando alinhamento e espaçamento padronizados pelo Bootstrap.-->
+              <input class="form-check-input" type="radio" name="q4" id="q4-casagrande" value="Casagrande">
+              <!--class="form-check-input": Estiliza o botão de rádio com os estilos do Bootstrap.-->
+              <label class="form-check-label" for="q4-casagrande">Casagrande</label>
+              <!--class="form-check-label": Aplica estilos ao rótulo, garantindo alinhamento e legibilidade.-->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q4" id="q4-socrates" value="Sócrates">
+              <label class="form-check-label" for="q4-socrates">Sócrates</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q4" id="q4-claudio" value="Cláudio">
+              <label class="form-check-label" for="q4-claudio">Cláudio</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div id="q4-feedback" class="mt-2"></div>
+            <!--class="mt-2": Adiciona margem superior de 2 unidades para espaçamento.-->
+          </div>
+
+
+          <div class="mb-4">
+            <!--mb-4: Adiciona margem inferior de 4 unidades, separando visualmente este bloco do próximo-->
+            <h2 class="h5">5. Quais dessas competições o Corinthians já venceu?</h2>
+            <!--h5: Define o título com destaque moderado, apresentando a quinta pergunta de maneira clara.-->
+            <div class="form-check">
+              <!--form-check: Classe do Bootstrap que organiza a checkbox e seu rótulo com alinhamento e espaçamento padrão.-->
+              <input class="form-check-input" type="checkbox" name="q5" id="q5-libertadores" value="Libertadores">
+              <!--class="form-check-input": Aplica os estilos do Bootstrap para caixas de seleção, garantindo boa aparência e responsividade.-->
+              <label class="form-check-label" for="q5-libertadores">Libertadores</label>
+              <!--class="form-check-label": Estiliza o rótulo da caixa de seleção.-->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="q5" id="q5-brasileirao" value="Brasileirão">
+              <label class="form-check-label" for="q5-brasileirao">Brasileirão</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="q5" id="q5-sula" value="Sulamericana">
+              <label class="form-check-label" for="q5-sula">Sulamericana</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div id="q5-feedback" class="mt-2"></div>
+            <!--class="mt-2": Adiciona margem superior de 2 unidades, separando-o do restante do conteúdo.-->
+          </div>
+
+          <div class="mb-4">
+            <!--mb-4: Adiciona margem inferior de 4 unidades, criando espaçamento entre este bloco e o próximo.-->
+            <h2 class="h5">6. Quais dessas são cores oficiais do Corinthians?</h2>
+            <!--h5: Define a pergunta com tamanho de fonte menor, destacando-a como a sexta questão.-->
+            <div class="form-check">
+              <!--form-check: Organiza a checkbox e seu rótulo com alinhamento e espaçamento padrão do Bootstrap.-->
+              <input class="form-check-input" type="checkbox" name="q6" id="q6-preto" value="Preto">
+              <!-- class="form-check-input": Aplica os estilos do Bootstrap para caixas de seleção.-->
+              <label class="form-check-label" for="q6-preto">Preto</label>
+              <!--class="form-check-label": Estiliza o texto do rótulo associado à checkbox.-->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="q6" id="q6-branco" value="Branco">
+              <label class="form-check-label" for="q6-branco">Branco</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="q6" id="q6-azul" value="Azul">
+              <label class="form-check-label" for="q6-azul">Azul</label>
+              <!-- O mesmo padrão de explicação do item anterior se aplica aqui. -->
+            </div>
+            <div id="q6-feedback" class="mt-2"></div>
+            <!--class="mt-2": Adiciona margem superior de 2 unidades, separando visualmente do restante do conteúdo.-->
+          </div>
+
+
+          <button type="button" id="submit-btn" class="btn btn-light w-100">Enviar Respostas</button>
+          <!--class="btn btn-light": Aplica os estilos do Bootstrap, tornando o botão claro com destaque visual consistente.
+          w-100: Faz com que o botão ocupe 100% da largura disponível, alinhando-se com o restante do formulário.-->
+        </form>
+
+        <section id="result" class="mt-4 d-none">
+          <!--class="mt-4 d-none": Adiciona margem superior de 4 unidades para espaçamento e oculta a seção inicialmente com a classe `d-none`.-->
+          <div class="alert alert-light">
+            <!--alert alert-light: Cria um contêiner com o estilo de alerta do Bootstrap, usando uma aparência clara.-->
+            <h2>Resultado:</h2>
+            <p id="score"></p>
+            <button type="button" id="restart-btn" class="btn btn-dark">Reiniciar Quiz</button>
+            <!--lass="btn btn-dark": Aplica estilo escuro ao botão para diferenciar visualmente a ação de reiniciar do botão de envio.-->
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-black text-white text-center py-3">
+    <!--class="py-3": Aplica um padding vertical (espaçamento interno acima e abaixo) de 3 unidades do Bootstrap, proporcionando boa separação visual.-->
+    <p>&copy; 2024 Corinthians Game. Desenvolvido por Gabriel Oliveira.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -25,7 +25,7 @@ document.getElementById("submit-btn").addEventListener("click", function () {
     allAnswered = false; // Marca que nem todas as perguntas foram respondidas
   }
 
-  // 2. Validação da Pergunta de Múltipla Escolha (Q2)
+  // 2. Validação da Pergunta (Q2)
   const q2Answer = document.querySelector('input[name="q2"]:checked'); // Resposta da pergunta de múltipla escolha (Q2)
   const q2Feedback = document.getElementById("q2-feedback"); // Feedback da segunda pergunta
   if (q2Answer) { // Verifica se uma resposta foi selecionada
@@ -42,7 +42,7 @@ document.getElementById("submit-btn").addEventListener("click", function () {
     allAnswered = false; // Marca que nem todas as perguntas foram respondidas
   }
 
-  // 3. Validação da Pergunta de Múltipla Escolha (Q3)
+  // 3. Validação da Pergunta (Q3)
   const q3Answer = document.querySelector('input[name="q3"]:checked'); // Resposta da pergunta de múltipla escolha (Q3)
   const q3Feedback = document.getElementById("q3-feedback"); // Feedback da terceira pergunta
   if (q3Answer) { // Verifica se uma resposta foi selecionada
@@ -59,7 +59,7 @@ document.getElementById("submit-btn").addEventListener("click", function () {
     allAnswered = false; // Marca que nem todas as perguntas foram respondidas
   }
 
-  // 4. Validação da Pergunta de Múltipla Escolha (Q4)
+  // 4. Validação da Pergunta (Q4)
   const q4Answer = document.querySelector('input[name="q4"]:checked'); // Resposta da pergunta de múltipla escolha (Q4)
   const q4Feedback = document.getElementById("q4-feedback"); // Feedback da quarta pergunta
   if (q4Answer) { // Verifica se uma resposta foi selecionada

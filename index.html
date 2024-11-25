@@ -18,12 +18,19 @@
 <body>
   <header class="bg-black text-white py-4 shadow">
     <!--py-4: Adiciona padding vertical (topo e base) de 4 unidades de espaçamento (classe Bootstrap para espaçamento).-->
-    <div class="container text-center">
-      <!--container: Centraliza o conteúdo horizontalmente e adiciona margens automáticas para alinhamento (classe Bootstrap para layout responsivo).-->
-      <h1 class="display-4 fw-bold">Corinthians Game</h1>
-      <!-- display-4: Define um estilo maior para o texto, utilizado geralmente em títulos importantes (classe Bootstrap para tamanho de fonte).-->
-      <p class="lead">Mostre que você é fiel torcedor e teste seus conhecimentos!</p>
-      <!--lead: Aplica um estilo especial ao parágrafo, com fonte maior e mais espaçamento entre linhas (classe Bootstrap para destacar texto).-->
+    <div class="container d-flex align-items-center justify-content-center">
+      <!-- d-flex: Torna o contêiner um flexbox para permitir o alinhamento lado a lado. -->
+      <!-- align-items-center: Alinha verticalmente ao centro. -->
+      <!-- justify-content-center: Centraliza horizontalmente. -->
+      <img src="https://cdn.meutimao.com.br/_upload/noticia/2022/06/03/corinthians-falou-sobre-as-possiveis-mudancas-no-hh941w.jpg" class="me-3" style="max-height: 80px;">
+      <!-- me-3: Adiciona margem direita entre a imagem e o título. -->
+      <!-- max-height: Limita a altura da imagem para evitar que fique desproporcional. -->
+      <div>
+        <h1 class="display-4 fw-bold">Corinthians Game</h1>
+        <!-- display-4: Define um estilo maior para o texto, utilizado geralmente em títulos importantes (classe Bootstrap para tamanho de fonte).-->
+        <p class="lead">Mostre que você é fiel torcedor e teste seus conhecimentos!</p>
+        <!--lead: Aplica um estilo especial ao parágrafo, com fonte maior e mais espaçamento entre linhas (classe Bootstrap para destacar texto).-->
+      </div>
     </div>
   </header>
 
@@ -38,7 +45,7 @@
         <!--col-12: Define que a coluna ocupará 100% da largura em telas pequenas (XS).
         col-md-8: A coluna ocupará 8/12 da largura total em telas médias (MD).
         col-lg-6: A coluna ocupará 6/12 (ou 50%) da largura total em telas grandes (LG).-->
-        <form id="quiz-form" class="p-4 rounded bg-dark text-white shadow">
+        <form id="quiz-form" class="p-4 rounded bg-dark text-white shadow opacity-75">
           <!--p-4: Adiciona padding interno de 4 unidades (classe Bootstrap para espaçamento interno).
           rounded: Arredonda as bordas do formulário (classe Bootstrap para bordas).-->
 
